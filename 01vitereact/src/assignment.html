@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Message</title>
+
+  <style>
+    #div-1{
+      background-color: yellow;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    .btn{
+      margin-right: 200px;
+      background-color: black;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="div-1">
+    <h1 class="h1">Print Message</h1>
+    <button onclick="printMsg('Hi, How are you?');" id = "hi" class="btn">Print Hi</button>
+    <button onclick="printMsg('Hello, How you doing?');" id= 'hello' class="btn">Print Hello</button>
+    <button onclick="printMsg('Bye, see you later...');" id= 'bye' class="btn">Print Bye</button>
+  </div>
+
+  <script>
+    function printMsg(message){
+      let msg = document.querySelector('.h1');
+      msg.textContent = `${message}`;
+    }
+  </script>
+</body>
+</html>
